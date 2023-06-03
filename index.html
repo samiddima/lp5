@@ -1552,28 +1552,7 @@
         "scriptLoader": []
       }
     </script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript">
-      jQuery(document).ready(function ($) {
-        if (window.history && window.history.pushState) {
-          $(window).on("popstate", function () {
-            var hashLocation = location.hash;
-            var hashSplit = hashLocation.split("#!/");
-            var hashName = hashSplit[1];
-
-            if (hashName !== "") {
-              var hash = window.location.hash;
-              if (hash === "") {
-                window.location = "https://asli.bangoostdigital.store/";
-                return false;
-              }
-            }
-          });
-
-          window.history.pushState("forward", null, "./#forward");
-        }
-      });
-    </script>
+    
     <!-- Histats.com  START  (aync)-->
 <script type="text/javascript">var _Hasync= _Hasync|| [];
 _Hasync.push(['Histats.start', '1,4767250,4,0,0,0,00010000']);
